@@ -5,8 +5,18 @@ header{
     display: flex;
     padding: 2px 2px;
     height: 35px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+header input{
+    border-radius: 25px;
+    width: 20vw;
+    align-content: flex-end;
+}
+
+#navSearch{
+    display: flex;
+}
+
 input[name="focusTekst"]:focus {
     font-size: 1rem;
     background-color: rgb(5, 139, 95);
