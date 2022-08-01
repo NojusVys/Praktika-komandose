@@ -6,3 +6,22 @@ header{
     padding: 2px 2px;
     height: 35px;
 }
+input[name="focusTekst"]:focus {
+    font-size: 1rem;
+    background-color: rgb(5, 139, 95);
+}
+
+input[type="radio"]:checked {
+    height: 2rem;
+    width: 2rem;
+    color: yellow;
+}
+
+input:required{
+    border-color: 2px solid sandybrown;
+}
+
+input[name="nameInput"]:focus {
+    color: red;
+    font-size: 2rem;
+}

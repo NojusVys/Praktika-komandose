@@ -16,5 +16,65 @@
         <nav>Contact Us</nav>
         <input type="text" placeholder="Search Courses.">
     </header>
+    
+    <h1> Payment form </h1>
+
+    <p>
+        Required fields are followed by "*"
+    </p>
+
+    <h2> Contact information </h2>
+
+    <form id="my_form" action="Script URL" method="post">
+
+<!-- form inputs like <input type="text"> 
+    <textarea name="" id="" cols="30" rows="10"></textarea>, 
+etc -->
+
+    <fieldset form="my_form">
+        <legend> Title </legend>
+        <input type="radio" id="radio_1" name="radioForm" value="radio_1">
+        <label for="radio_1">Mister</label><br>
+        <input type="radio" id="radio_2" name="radioForm" value="radio_2">
+        <label for="radio_2">Miss</label><br>
+    </fieldset>
+
+    <br>
+        <label for="labelname" required>Name: *</label>
+        <input type="text" name="nameInput" placeholder="this is my Name"> <br>
+        <br>
+
+        <label for="labelname">Email: *</label>
+        <input type="text" placeholder="xxxx@gmail.com"> <br>
+        <br>
+        
+        <label for="labelname">Pasword: *</label>
+        <input type="text" placeholder="Abc123"> <br>
+        <br>
+
+        <h2> Payment information </h2>
+
+        <label for="Cardtype">Card type: *</label>
+        <Select name="Cardtype" id="Cardtypes" required> 
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="ApplePay">ApplePay</option>
+
+        </Select> <br>
+        <br>
+
+        <label for="labelname">Card Number: *</label>
+        <input type="text" placeholder="123123"> <br>
+        <br>
+
+        <label for="labelname">Expiration Date: *</label>
+        <input type="date" name="Date" id="required"> <br>
+        <br>
+        <button type="submit">Validate the Payment</button>
+    </form>
+
+
+
+
 </body>
 </html>
