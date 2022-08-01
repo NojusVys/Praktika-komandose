@@ -5,6 +5,7 @@ header{
     display: flex;
     padding: 2px 2px;
     height: 35px;
+    justify-content: space-between;
 }
 input[name="focusTekst"]:focus {
     font-size: 1rem;
