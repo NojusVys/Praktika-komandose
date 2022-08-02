@@ -25,3 +25,83 @@ input[name="nameInput"]:focus {
     color: red;
     font-size: 2rem;
 }
+
+/* textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  } */
+
+  main {
+    display: flex;
+  }
+  
+  .bigblock{
+    display: flex;
+    background: rgb(25, 151, 52);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .block {
+    background: rgb(157, 238, 175);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  #smallblock{
+    display: block;
+    position: inherit;
+    border-radius: 12px;
+    background-color: rgb(3, 73, 15);
+  }
+  
+  
+  main > .block {
+    flex: 3;
+    margin-left: 0;
+  }
+  
+  @media only screen and (max-width: 60rem) {
+    /* header {
+      text-align: center;
+    }
+  
+    nav {
+      padding: 0;
+      text-align: left;
+    }
+  
+    nav a {
+      color: rgb(16, 158, 201);
+      display: block;
+      padding: 1rem;
+      text-decoration: underline;
+    }
+  
+    nav a:not(:last-child) {
+      margin-right: 0;
+      border-bottom: 1px solid #eee;
+    } */
+  
+    .bigblock {
+      display: block;
+      padding: 1rem 1rem 0 1rem;
+    }
+    
+    
+      .block {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }

@@ -17,14 +17,12 @@
         <input type="text" placeholder="Search Courses.">
     </header>
     
-    <h1> Payment form </h1>
-
-    <p>
-        Required fields are followed by "*"
-    </p>
-
-    <h2> Contact information </h2>
-
+    
+<main>
+    <div class="bigblock">
+    <div class="block">
+        <h2> Step 1: Your details </h2>
+        
     <form id="my_form" action="Script URL" method="post">
 
 <!-- form inputs like <input type="text"> 
@@ -32,48 +30,115 @@
 etc -->
 
     <fieldset form="my_form">
-        <legend> Title </legend>
-        <input type="radio" id="radio_1" name="radioForm" value="radio_1">
-        <label for="radio_1">Mister</label><br>
-        <input type="radio" id="radio_2" name="radioForm" value="radio_2">
-        <label for="radio_2">Miss</label><br>
-    </fieldset>
-
-    <br>
-        <label for="labelname" required>Name: *</label>
-        <input type="text" name="nameInput" placeholder="this is my Name"> <br>
+    
+        <label for="labelname" required>Name</label>
+        <input type="text" name="nameInput" placeholder="First and last name"> <br>
         <br>
 
-        <label for="labelname">Email: *</label>
+        <label for="labelname">Email</label>
         <input type="text" placeholder="xxxx@gmail.com"> <br>
         <br>
         
-        <label for="labelname">Pasword: *</label>
-        <input type="text" placeholder="Abc123"> <br>
+        <label for="labelname">Phone</label>
+        <input type="text" placeholder="Ex.: +3706*******"> <br>
         <br>
 
-        <h2> Payment information </h2>
+    </fieldset>
+</div>
 
-        <label for="Cardtype">Card type: *</label>
-        <Select name="Cardtype" id="Cardtypes" required> 
-            <option value="Visa">Visa</option>
-            <option value="Mastercard">Mastercard</option>
-            <option value="ApplePay">ApplePay</option>
+<main>
 
-        </Select> <br>
+<div class="block">
+    <h2> Step 2: Delivery address </h2>
+
+    <form id="my_form" action="Script URL" method="post">
+
+    <fieldset form="my_form">
+    
+        <label for="labelname" required>Adress</label>
+        <input type="text" name="nameInput" placeholder="  
+        "> <br>
         <br>
 
-        <label for="labelname">Card Number: *</label>
-        <input type="text" placeholder="123123"> <br>
+        <label for="labelname">Postal code</label>
+        <input type="text" placeholder=""> <br>
+        <br>
+        
+        <label for="labelname">Country</label>
+        <input type="text" placeholder=""> <br>
         <br>
 
-        <label for="labelname">Expiration Date: *</label>
-        <input type="date" name="Date" id="required"> <br>
+    </fieldset>
+</div>
+</main>
+
+<main>
+<div class="block">
+        <h2> Step 3: Card details </h2>
+
+    <fieldset form="my_form">
+    
+            <label for="Cardtype">Card type</label>
+            <br>
+        <input type="radio" id="radio_1" name="radioForm" value="radio_1">
+        <label for="radio_1">
+            <img
+              src="https://www.svgrepo.com/show/303225/visa-logo.svg"
+              alt="Visa logo"
+              width="30px"
+              height="30px"
+            />
+            Visa</label>
+        <input type="radio" id="radio_1" name="radioForm" value="radio_1">
+        <label for="radio_1">
+            <img
+              src="https://www.svgrepo.com/show/39701/amex.svg"
+              alt="Amex logo"
+              width="30px"
+              height="30px"
+            />
+            AmEX</label>
+        <input type="radio" id="radio_2" name="radioForm" value="radio_2">
+        <label for="radio_2">
+            <img
+              src="https://www.svgrepo.com/show/126529/mastercard.svg"
+              alt="MasterCard logo"
+              width="30px"
+              height="30px"
+            />
+            MasterCard</label><br>
+        </Select>
+    </fieldset>
+<br>
+    <fieldset>
+    
+        <label for="labelname">Card Number</label>
+        <input type="text" placeholder="123123">
+</fieldset>
+<br>
+<fieldset>
+    
+    <label for="labelname">Security Code</label>
+    <input type="text" placeholder=""> <br>
+    
+</fieldset>
+<br>
+<fieldset>
+    
+    <label for="labelname">Name on card</label>
+    <input type="text" placeholder="Exact name as on a card"> <br>
+    
+</fieldset>
+</div>
+</main>
+
         <br>
-        <button type="submit">Validate the Payment</button>
+
+        <button id="smallblock" type="submit">BUY IT!</button>
     </form>
 
-
+</div>
+</main>
 
 
 </body>
