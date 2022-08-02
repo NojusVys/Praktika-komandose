@@ -52,32 +52,11 @@ a {
 	background-color: white;
 }
 
-@media screen and (max-width: 1000px) {
-	.hamburger {
-		display: block;
-	}
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+@media (max-width: 1000px) {
+	.hamburger{
+        display: block;
     }
 
-    .navMenu{
-        position: fixed;
-        right: -100%;
-        top: 45px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #0c53ed;
-        width: 100%;
-        text-align: center;
-        transition: 0s;
-    }
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
@@ -90,7 +69,7 @@ a {
   
 	.navMenu {
 		position: fixed;
-		right: -100%;
+		left: -100%;
 		top: 45px;
 		gap: 0;
 		flex-direction: column;
@@ -190,12 +169,7 @@ input[name="nameInput"]:focus {
   }
   
   
-  main > .block {
-    flex: 3;
-    margin-left: 0;
-  }
-  
-  @media screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     .bigblock {
       display: block;
       padding: 1rem 1rem 0 1rem;
@@ -208,9 +182,6 @@ input[name="nameInput"]:focus {
         margin-left: 0;
       }
     }
-
-
-
 
 main > .block {
 	flex: 3;
@@ -265,10 +236,6 @@ main > .block {
 	flex-direction: column;
 	align-items: center;
 	flex: 1;
-
-	@media (max-width: 768px) {
-		font-size: 12px;
-	}
 }
 
 .stepper-item::before {
