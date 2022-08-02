@@ -1,11 +1,30 @@
 header{
     background-color: skyblue;
+    display: flex;
+    height: 35px;
+    padding: 2px 2px;
+    justify-content: space-around;
+}
+
+#navText{
     color: white;
     font-size: 24px;
     display: flex;
     padding: 2px 2px;
-    height: 35px;
+    justify-content: space-around;
+    width: 50vw;
 }
+
+header input{
+    border-radius: 25px;
+    width: 300px;
+}
+
+#navSearch{
+    display: flex;
+    align-content: flex-end;
+}
+
 input[name="focusTekst"]:focus {
     font-size: 1rem;
     background-color: rgb(5, 139, 95);
