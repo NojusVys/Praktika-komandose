@@ -57,6 +57,27 @@ a {
 		display: block;
 	}
 
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: fixed;
+        right: -100%;
+        top: 45px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0c53ed;
+        width: 100%;
+        text-align: center;
+        transition: 0s;
+    }
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
@@ -66,7 +87,7 @@ a {
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
-
+  
 	.navMenu {
 		position: fixed;
 		right: -100%;
@@ -127,16 +148,65 @@ input[name="nameInput"]:focus {
 	font-size: 2rem;
 }
 
-/* textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-  } */
+  main {
+    display: flex;
+  }
+  
+  .bigblock{
+    display: flex;
+  }
+
+  .biggestblock{
+    background: rgb(25, 151, 52);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .block {
+    background: rgb(157, 238, 175);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .smallblockcontrol{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .smallblock button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    align-items: baseline;
+    position: center;
+  }
+  
+  
+  main > .block {
+    flex: 3;
+    margin-left: 0;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .bigblock {
+      display: block;
+      padding: 1rem 1rem 0 1rem;
+    }
+    
+    
+      .block {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
 
 main {
 	display: flex;
@@ -172,9 +242,6 @@ main > .block {
 }
 
 @media only screen and (max-width: 60rem) {
-	/* header {
-      text-align: center;
-    }
   
     nav {
       padding: 0;
