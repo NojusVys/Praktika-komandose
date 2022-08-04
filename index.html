@@ -86,7 +86,6 @@
           <div class="step-name">PERSONAL DETAILS</div>
         </div>
       </div>
-      <script src="script.js"></script>
       <!-- Ginto pabaiga -->
       <!-- Marijos pradzia -->
   <div class="biggestblock">
@@ -101,12 +100,12 @@
     
                  <h2> Contact information </h2>
     
-                <form id="my_form" action="Script URL" method="post">
+                <form id="my_form" action="/" method="get">
     
                  <fieldset form="my_form">
         
                      <label for="labelname" required>Name</label>
-                    <input type="text" name="nameInput" placeholder="First and last name"> <br>
+                    <input type="text" name="nameInput" placeholder="First and last name" required> <br>
             <br>
     
             <label for="labelname">Email</label>
@@ -208,11 +207,12 @@
 </div>
 <div class="smallblockcontrol">
     <div class="smallblock">
-        <button type="submit">BUY IT!</button>
+        <button id="next" onclick="myFunction()">BUY IT!</button>
     </div>
 </div>
 </form>
 </main>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

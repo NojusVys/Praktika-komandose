@@ -87,8 +87,14 @@ a {
 		left: 0;
 	}
 
-	.stepper-wrapper.active{
+	.stepper-wrapper1.active{
 		display: none;
+	}
+	.stepper-wrapper2.active{
+		display: flex;
+	}
+	.stepper-wrapper3.active{
+		display: flex;
 	}
 }
 
@@ -230,7 +236,6 @@ main > .block {
 }
 .stepper-wrapper2 {
 	margin-top: auto;
-	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
 	background-color: orangered;
@@ -242,7 +247,6 @@ main > .block {
 }
 .stepper-wrapper3 {
 	margin-top: auto;
-	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
 	background-color: orangered;
