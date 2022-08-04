@@ -53,9 +53,9 @@ a {
 }
 
 @media (max-width: 1000px) {
-	.hamburger{
-        display: block;
-    }
+	.hamburger {
+		display: block;
+	}
 
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
@@ -66,7 +66,7 @@ a {
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
-  
+
 	.navMenu {
 		position: fixed;
 		left: -100%;
@@ -127,87 +127,49 @@ main {
 	display: flex;
 }
 
-  .block {
-    background: rgb(157, 238, 175);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 1rem;
+.block {
+	background: rgb(157, 238, 175);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	margin: 1rem;
 	width: 30%;
-  }
-  
-  .bigblock {
+}
+
+.bigblock {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 5%;
 	width: 90%;
 }
 
-.biggestblock{
-    background: rgb(25, 151, 52);
+.biggestblock {
+	background: rgb(25, 151, 52);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 	border-radius: 0.5rem;
 	padding: 5vw;
 	margin: 1rem;
 }
 
-  .smallblockcontrol{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-  
-  .smallblock button{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 300px;
-    height: 30px;
-    align-items: baseline;
-    position: center;
-  }
-  
-  /* Marijos pabaiga */
-  /* Ginto prasideda */
-  
-  @media (max-width: 1000px) {
-    .bigblock {
-      display: block;
-      padding: 1rem 1rem 0 1rem;
-    }
-    
-    
-      .block {
-        margin-top: 0;
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-main > .block {
-	flex: 3;
-	margin-left: 0;
+.smallblockcontrol {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
 }
 
-@media only screen and (max-width: 1000px) {
-  
-    nav {
-      padding: 0;
-      text-align: left;
-    }
-  
-    nav a {
-      color: rgb(16, 158, 201);
-      display: block;
-      padding: 1rem;
-      text-decoration: underline;
-    }
-  
-    nav a:not(:last-child) {
-      margin-right: 0;
-      border-bottom: 1px solid #eee;
-    } */
+.smallblock button {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 300px;
+	height: 30px;
+	align-items: baseline;
+	position: center;
+}
 
+/* Marijos pabaiga */
+
+@media (max-width: 1000px) {
 	.bigblock {
 		display: block;
 		padding: 1rem 1rem 0 1rem;
@@ -219,8 +181,43 @@ main > .block {
 		margin-left: 0;
 	}
 }
+
+main > .block {
+	flex: 3;
+	margin-left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		padding: 0;
+		text-align: left;
+	}
+
+	nav a {
+		color: rgb(16, 158, 201);
+		display: block;
+		padding: 1rem;
+		text-decoration: underline;
+	}
+
+	nav a:not(:last-child) {
+		margin-right: 0;
+		border-bottom: 1px solid #eee;
+	}
+	*/ .bigblock {
+		display: block;
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	.block {
+		margin-top: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+/* Ginto prasideda */
 /* progress bar */
-.stepper-wrapper {
+.stepper-wrapper1 {
 	margin-top: auto;
 	display: flex;
 	justify-content: space-between;
@@ -230,6 +227,30 @@ main > .block {
 	padding-bottom: 10px;
 	border: 2px rgb(70, 26, 11);
 	margin: 15px;
+}
+.stepper-wrapper2 {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	background-color: orangered;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px rgb(70, 26, 11);
+	margin: 15px;
+	display: none;
+}
+.stepper-wrapper3 {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	background-color: orangered;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px rgb(70, 26, 11);
+	margin: 15px;
+	display: none;
 }
 .stepper-item {
 	position: relative;
