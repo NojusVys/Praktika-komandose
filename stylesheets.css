@@ -107,6 +107,9 @@ a {
 	background-size: cover;
 }
 
+/* Nojaus baigiasi */
+/* Marijos prasideda */
+
 input[name="focusTekst"]:focus {
 	font-size: 1rem;
 	background-color: rgb(5, 139, 95);
@@ -126,18 +129,21 @@ main {
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1rem;
+	width: 30%;
   }
   
   .bigblock {
 	display: flex;
-	
+	justify-content: center;
+	width: 90%;
+	margin: 5%;
 }
 
 .biggestblock{
     background: rgb(25, 151, 52);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 	border-radius: 0.5rem;
-	padding: 1.5rem;
+	padding: 5vw;
 	margin: 1rem;
 }
 
@@ -157,6 +163,8 @@ main {
     position: center;
   }
   
+  /* Marijos pabaiga */
+  /* Ginto prasideda */
   
   @media (max-width: 1000px) {
     .bigblock {
