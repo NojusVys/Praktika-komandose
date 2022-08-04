@@ -112,24 +112,13 @@ input[name="focusTekst"]:focus {
 	background-color: rgb(5, 139, 95);
 }
 
-input[type="radio"]:checked {
-	height: 2rem;
-	width: 2rem;
-	color: yellow;
-}
-
 input:required {
 	border-color: 2px solid sandybrown;
 }
 
-input[name="nameInput"]:focus {
-	color: red;
-	font-size: 2rem;
+main {
+	display: flex;
 }
-
-  main {
-    display: flex;
-  }
 
   .block {
     background: rgb(157, 238, 175);
