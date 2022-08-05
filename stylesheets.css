@@ -114,6 +114,8 @@ a {
 /* Nojaus baigiasi */
 /* Marijos prasideda */
 
+/* 1 */
+
 input[name="focusTekst"]:focus {
 	font-size: 1rem;
 	background-color: rgb(5, 139, 95);
@@ -127,6 +129,13 @@ main {
 	display: flex;
 }
 
+/* #my_form2 {
+	display: none;
+} */
+
+/* #my_form3 {
+	display: none;
+} */
 .block {
 	background: rgb(157, 238, 175);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -167,7 +176,10 @@ main {
 	position: center;
 }
 
-/* Marijos pabaiga */
+/* 1pabaiga */
+
+
+
 
 @media (max-width: 1000px) {
 	.bigblock {
@@ -187,6 +199,9 @@ main > .block {
 	margin-left: 0;
 }
 
+/* Marijos pabaiga */
+
+/* Nojaus pradzia */
 @media only screen and (max-width: 1000px) {
 	nav {
 		padding: 0;
@@ -215,6 +230,8 @@ main > .block {
 		margin-left: 0;
 	}
 }
+
+/* Nojaus pabaiga */
 /* Ginto prasideda */
 /* progress bar */
 .stepper-wrapper1 {
